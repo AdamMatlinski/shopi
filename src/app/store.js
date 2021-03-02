@@ -1,8 +1,15 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+
+import bookListReducer from '../components/organisms/bookList/bookListSlice';
+import cartIconReducer from '../components/molecules/cartIcon/cartIconSlice';
+import cartViewReducer from '../components/templates/cartView/cartViewSlice';
+import orderSummaryReducer from '../components/molecules/orderSummary/orderSummarySlice';
 
 export default configureStore({
   reducer: {
-    counter: counterReducer,
+    bookList: bookListReducer,
+    cartCounter: cartIconReducer,
+    cartBookList: cartViewReducer,
+    cartOrderSummary: orderSummaryReducer,
   },
 });
