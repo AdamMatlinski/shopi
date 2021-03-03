@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import PropTypes from 'prop-types';
 
 import {
   BookItemContainer,
@@ -87,6 +88,19 @@ const BookItem = ({
       </BookItemWrapper>
     </BookItemContainer>
   );
+};
+
+BookItem.propTypes = {
+  id: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  genre: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired,
+  bookStockAmount: PropTypes.string.isRequired,
+  addToCartList: PropTypes.func.isRequired,
+  addToCartCounter: PropTypes.func.isRequired,
+  addProductPrice: PropTypes.func.isRequired,
 };
 
 export default BookItem;
