@@ -1,5 +1,9 @@
 ### `English version below!`
 
+### Google Lighthouse Raport
+
+<img src="./src/assets/images/lightHouseRaport.png">
+
 Shopi, jest to MVP aplikacji e-commerce. Projekt został stworzony, w technologii React + Redux Toolkit.
 
 # Instrukcja uruchomienia
