@@ -1,8 +1,10 @@
 ### `English version below!`
 
+Shopi, jest to MVP aplikacji e-commerce. Projekt został stworzony, w technologii React + Redux Toolkit.
+
 # Instrukcja uruchomienia
 
-#### wymagane zależności:
+#### Wymagane zależności:
 
 - [Git](https://git-scm.com/downloads)
 - [Node i NPM](https://nodejs.org/en/download/)
@@ -12,7 +14,7 @@
 <ol>
   <li>Sklonuj repozytorium za pomocą komendy: git clone https://github.com/AdamMatlinski/shopi.git</li>
   <li>W katalogu głównym projektu, otwórz konsole i zainstaluj paczki NPM, za pomocą komendy: npm install</li>
-  <li>Żeby uruchomić aplikację, wpisz w konsoli: npm run start</li>
+  <li>Aby uruchomić aplikację, wpisz w konsoli: npm run start</li>
   <li>Skopiuj z konsoli adres url (prawdopodobnie będzie to: http://localhost:8080/) i otwórz/wklej go w przeglądarce</li>
 </ol>
 
