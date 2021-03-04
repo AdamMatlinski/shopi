@@ -5,6 +5,7 @@
 <img src="./src/assets/images/lightHouseRaport.png">
 
 Shopi, jest to MVP aplikacji e-commerce. Projekt został stworzony, w technologii React + Redux Toolkit.
+Aplikacja powstała, w celach edukacyjno hobbystycznych. W najbliższym czasie zostanie wzbogacona, o TypeScript. Dalsze cele rozwojowe to stworzenie backendu, za pomocą technologii Node.js.
 
 # Instrukcja uruchomienia
 
