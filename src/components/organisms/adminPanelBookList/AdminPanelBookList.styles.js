@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const StyledBookList = styled.ol`
   display: flex;
@@ -152,4 +152,9 @@ export const StyledPriceBox = styled.div`
 export const StyledStockNumber = styled.span`
   font-weight: 700;
   margin-left: 4px;
+  ${({ outOfStock }) =>
+    outOfStock &&
+    css`
+      color: ${({ theme }) => theme.colors.red};
+    `}
 `;

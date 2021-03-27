@@ -47,7 +47,11 @@ const AdminPanelBookList = () => {
                   </StyledPriceBox>
                   <div>
                     <span>in stock:</span>
-                    <StyledStockNumber>{bookStockAmount}</StyledStockNumber>
+                    {parseInt(bookStockAmount) === 0 ? (
+                      <StyledStockNumber outOfStock>{`${bookStockAmount}!`}</StyledStockNumber>
+                    ) : (
+                      <StyledStockNumber>{bookStockAmount}</StyledStockNumber>
+                    )}
                   </div>
                 </StyledWrapper>
               </StyledBookDesc>
