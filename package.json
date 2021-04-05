@@ -15,7 +15,7 @@
     "react-redux": "^7.2.3",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.2",
-    "styled-components": "^5.2.1"
+    "styled-components": "^5.2.3"
   },
   "scripts": {
     "start": "webpack serve --open --config webpack.dev.js",

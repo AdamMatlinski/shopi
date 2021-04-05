@@ -18,7 +18,7 @@ import Button from '../../atoms/button/Button';
 
 const AddBookForm = () => {
   const dispatch = useDispatch();
-  const { register, handleSubmit, errors } = useForm();
+  const { register, handleSubmit, errors, reset } = useForm();
 
   const onSubmit = (data, e) => {
     data.bookImage.length
@@ -26,7 +26,7 @@ const AddBookForm = () => {
       : (data.bookImage = 'default-img.png');
     data.bookId = uuidv4();
     dispatch(addBook(data));
-    e.target.reset();
+    reset();
   };
 
   return (
