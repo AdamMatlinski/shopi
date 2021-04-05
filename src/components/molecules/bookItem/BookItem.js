@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 
@@ -31,12 +31,13 @@ const BookItem = ({
   const dispatch = useDispatch();
   const [open, setOpen] = useState(false);
 
-  const handleOpen = () => {
-    setOpen(true);
+  useEffect(() => {
+    const timer = setTimeout(() => setOpen(false), 2000);
+    return () => clearTimeout(timer);
+  }, [open]);
 
-    setTimeout(() => {
-      setOpen(false);
-    }, 2000);
+  const handleOpen = () => {
+    setOpen(!open);
   };
 
   const handleAddToCart = ({ id, image, title, author, price }) => {
